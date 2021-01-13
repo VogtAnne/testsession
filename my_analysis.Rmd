@@ -1,0 +1,18 @@
+---
+title: "My analysis"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Random number generation
+"Here, we generate a random number between 0 an 10"
+```{r}
+set.seed(1234)
+number<-sample(x=0:10, size=1, replace=FALSE)
+print(number)
+```
+
+
