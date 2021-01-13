@@ -12,7 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 set.seed(1234)
 number<-sample(x=0:10, size=1, replace=FALSE)
-print(number)
+text<-paste ("My favorite number is", number)
+cowsay::say(text, "cow")
+
 ```
 
 
